@@ -29,23 +29,32 @@ public class UserStory_2 {
 
     @Test
     public void test() throws InterruptedException {
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[1]/a"));
+        WebElement files = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[1]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[2]/a"));
+
+        WebElement activity = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[2]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[3]/a"));
+
+        WebElement gallery = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[3]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[4]/a"));
+
+        WebElement talk = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[4]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[5]/a"));
+
+        WebElement calendar = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[5]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[6]/a"));
+
+        WebElement deck = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[6]/a"));
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[7]/a"));
+
+        WebElement announcements = driver.findElement(By.xpath("//*[@id=\"appmenu\"]/li[7]/a"));
         Thread.sleep(1000);
+
         driver.findElement(By.xpath("//*[@id=\"expand\"]")).click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"expanddiv\"]/ul/li[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"expanddiv\"]/ul/li[3]")).click(); // logging out
+
+
 
     }
 
